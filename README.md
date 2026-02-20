@@ -9,7 +9,7 @@ This project was developed as part of the **SammTech Frontend Developer Intern T
 # 🌐 Live Demo
 
 > Add your deployed Vercel link here  
-`https://mini-ecommerce-website-snowy.vercel.app/`
+https://mini-ecommerce-website-snowy.vercel.app/
 
 ---
 
@@ -102,20 +102,27 @@ Optimized for:
 ---
 
 # 📁 PROJECT STRUCTURE
-/app
-   page.tsx                 # Home page
-   /product/[id]/page.tsx   # Product Details page
-/components
-   Navbar.tsx
-   Hero.tsx
-   ProductCard.tsx
-   ProductCardSkeleton.tsx
-   Filter.tsx
-/types
-   Product.ts
-/public
-   products.json            # Dummy product data
-
+mini_ecommerce_website/
+│
+├── app/ # Next.js App Router
+│ ├── page.tsx # Home Page
+│ └── product/[id]/ # Dynamic Product Route
+│ └── page.tsx # Product Details Page
+│
+├── components/ # Reusable UI Components
+│ ├── Navbar.tsx
+│ ├── Hero.tsx
+│ ├── ProductCard.tsx
+│ ├── ProductCardSkeleton.tsx
+│ └── Filter.tsx
+│
+├── types/ # Type Definitions
+│ └── Product.ts
+│
+├── public/ # Static Assets
+│ └── products.json
+│
+└── README.md
 
 
 
@@ -134,6 +141,10 @@ npm install
 npm run dev
 🌍 Now open in your browser:
 http://localhost:3000
+
+
+---
+
 🔄 GIT WORKFLOW
 
 This project follows a structured Git workflow:
@@ -141,11 +152,6 @@ This project follows a structured Git workflow:
 main → Production-ready code
 
 dev → Development branch
-
-
-
-
-
 
 
 feature/* → Individual feature branches
