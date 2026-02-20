@@ -1,36 +1,194 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ MINI E-COMMERCE
 
-## Getting Started
+A modern and responsive **Mini E-Commerce Frontend** built using **Next.js (App Router), React 18, TypeScript, and Tailwind CSS**.
 
-First, run the development server:
+This project was developed as part of the **SammTech Frontend Developer Intern Task** to demonstrate frontend development skills including dynamic routing, filtering, responsive design, and clean code structure.
+
+---
+
+# 🌐 Live Demo
+
+> Add your deployed Vercel link here  
+`https://your-vercel-link.vercel.app`
+
+---
+
+# 🔗 GitHub Repository
+
+👉 https://github.com/akib2012/mini_ecommerce_website
+
+---
+
+# ✨ FEATURES
+
+---
+
+## 🛒 Product Listing Page
+
+- Fetches product data from `/public/products.json`
+- Displays:
+  - Product Image  
+  - Title  
+  - Price  
+  - Short Description  
+
+### 📱 Responsive Grid Layout
+
+- 📱 **Mobile** → 2 cards  
+- 💻 **Medium screens** → 4 cards  
+- 🖥 **Large screens** → 5 cards  
+
+✔ Modern card design  
+✔ Smooth hover animation  
+
+---
+
+## 🔎 Filtering System
+
+- Filter by **Category**
+- Filter by **Price Range**
+- Dynamic filtering without page reload
+- Clean and responsive filter UI
+
+---
+
+## 📄 Product Details Page
+
+- Dynamic routing using Next.js `[id]`
+- Displays:
+  - Large product image  
+  - Full description  
+  - Price  
+  - Category  
+
+✔ Responsive layout  
+✔ Go Back navigation button  
+✔ Skeleton loading state  
+
+---
+
+## ⏳ Loading Skeleton
+
+- Placeholder UI while fetching data
+- Smooth pulse animation
+- Improves perceived performance and UX
+
+---
+
+## 📱 Fully Responsive Design
+
+Optimized for:
+
+- Mobile  
+- Tablet  
+- Desktop  
+
+✔ Consistent card heights  
+✔ Proper image aspect ratios  
+
+---
+
+# 🛠 TECH STACK
+
+| Technology | Usage |
+|------------|--------|
+| **Next.js (App Router)** | Framework |
+| **React 18** | UI Library |
+| **TypeScript** | Type Safety |
+| **Tailwind CSS** | Styling |
+| **Git & GitHub** | Version Control |
+| **Vercel** | Deployment |
+
+---
+
+# 📁 PROJECT STRUCTURE
+mini_ecommerce_website/
+│
+├── app/
+│ ├── page.tsx
+│ └── products/[id]/page.tsx
+│
+├── components/
+│ ├── ProductCard.tsx
+│ ├── FilterBar.tsx
+│ └── SkeletonCard.tsx
+│
+├── types/
+│ └── product.ts
+│
+├── public/
+│ └── products.json
+│
+└── README.md
+
+
+---
+
+# 🚀 GETTING STARTED
+
+## 1️⃣ Clone the Repository
 
 ```bash
+git clone https://github.com/akib2012/mini_ecommerce_website.git
+cd mini_ecommerce_website
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌍 Now open in your browser:
+http://localhost:3000
+🔄 GIT WORKFLOW
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project follows a structured Git workflow:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+main → Production-ready code
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+dev → Development branch
 
-## Learn More
+feature/* → Individual feature branches
 
-To learn more about Next.js, take a look at the following resources:
+✔ Meaningful commit messages
+✔ Clean branch management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎯 LEARNING HIGHLIGHTS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Next.js App Router
 
-## Deploy on Vercel
+Dynamic Routing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Client-side Filtering
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Skeleton Loading UX
+
+Responsive Tailwind Layouts
+
+Clean Component Architecture
+
+TypeScript Best Practices
+
+📌 FUTURE IMPROVEMENTS
+
+Add Cart functionality
+
+Add Search feature
+
+Add Pagination
+
+Connect with real backend API
+
+Add State Management (Redux / Zustand)
+
+Implement Authentication
+
+👨‍💻 AUTHOR
+
+Md. Perbej Bhuiyan Akib
+Frontend Developer
+
+GitHub: https://github.com/akib2012
+
+📜 LICENSE
+
+This project is developed for internship evaluation purposes.
