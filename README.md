@@ -102,31 +102,26 @@ Optimized for:
 ---
 
 # 📁 PROJECT STRUCTURE
-mini_ecommerce_website/
-│
-├── app/
-│ ├── page.tsx
-│ └── products/[id]/page.tsx
-│
-├── components/
-│ ├── ProductCard.tsx
-│ ├── FilterBar.tsx
-│ └── SkeletonCard.tsx
-│
-├── types/
-│ └── product.ts
-│
-├── public/
-│ └── products.json
-│
-└── README.md
+/app
+   page.tsx                 # Home page
+   /product/[id]/page.tsx   # Product Details page
+/components
+   Navbar.tsx
+   Hero.tsx
+   ProductCard.tsx
+   ProductCardSkeleton.tsx
+   Filter.tsx
+/types
+   Product.ts
+/public
+   products.json            # Dummy product data
 
 
----
+
 
 # 🚀 GETTING STARTED
 
-## 1️⃣ Clone the Repository
+# 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/akib2012/mini_ecommerce_website.git
@@ -146,6 +141,12 @@ This project follows a structured Git workflow:
 main → Production-ready code
 
 dev → Development branch
+
+
+
+
+
+
 
 feature/* → Individual feature branches
 
