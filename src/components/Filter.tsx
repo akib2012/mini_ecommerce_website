@@ -31,20 +31,21 @@ export default function Filter({ products, onFilter }: FilterProps) {
   return (
     
     <div>
-        <div>
-            <h2 className="text-xl font-bold text-gray-800 mb-4">
-        Find Your Product
-      </h2>
-        </div>
-
+       <div className="flex justify-center mb-8">
+  <h2 className="relative text-2xl  md:text-3xl font-bold text-gray-800 tracking-wide">
+    Find Your Product
+    <span className="absolute left-1/2 -bottom-2 w-16 h-1 bg-indigo-600 rounded-full -translate-x-1/2"></span>
+  </h2>
+</div>
         <div className="flex flex-col md:flex-row gap-4 mb-6 w-full">
         
       
       {/* Category Filter */}
       <div className="flex flex-col w-full md:w-1/2">
-        <label className="text-sm font-semibold text-gray-700 mb-1">
-          Filter by Category
-        </label>
+        <label className="relative text-sm font-semibold text-gray-800 mb-4 inline-block">
+  Filter by Category
+  <span className="absolute left-0 -bottom-1 w-10 h-[2px] bg-indigo-600 rounded-full"></span>
+</label>
         <select
           className="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
           onChange={(e) => handleCategory(e.target.value)}
@@ -60,9 +61,10 @@ export default function Filter({ products, onFilter }: FilterProps) {
 
       {/* Price Filter */}
       <div className="flex flex-col w-full md:w-1/2">
-        <label className="text-sm font-semibold text-gray-700 mb-1">
-          Filter by Price
-        </label>
+        <label className="relative text-sm font-semibold text-gray-800 mb-4 inline-block">
+  Filter by Price
+  <span className="absolute left-0 -bottom-1 w-10 h-[2px] bg-indigo-600 rounded-full"></span>
+</label>
         <select
           className="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
           onChange={(e) => handlePrice(e.target.value)}
