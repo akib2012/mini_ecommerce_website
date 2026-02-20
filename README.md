@@ -15,7 +15,7 @@ This project was developed as part of the **SammTech Frontend Developer Intern T
 
 # 🔗 GitHub Repository
 
-👉 https://github.com/akib2012/mini_ecommerce_website
+👉 https://github.com/akib2012/mini_ecommerce_website.git
 
 ---
 
