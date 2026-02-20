@@ -39,7 +39,6 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
 
-        {/* Subtle hover overlay */}
         <div className="absolute inset-0 pointer-events-none bg-indigo-500/0 group-hover:bg-indigo-500/5 transition-colors duration-300" />
       </div>
     </Link>

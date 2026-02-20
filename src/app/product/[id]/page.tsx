@@ -39,7 +39,7 @@ export default function ProductDetails() {
 
     fetchProduct();
   }, [id]);
-
+/* here loading phage  */
   if (loading) return <ProductCardSkeleton />;
 
   if (error)

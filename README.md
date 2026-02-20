@@ -101,36 +101,39 @@ Optimized for:
 
 ---
 
-# 📁 PROJECT STRUCTURE
+# 📁 Project Structure
+
+```
 mini_ecommerce_website/
 │
-├── app/ # Next.js App Router
-│ ├── page.tsx # Home Page
-│ └── product/[id]/ # Dynamic Product Route
-│ └── page.tsx # Product Details Page
+├── app/                          # Next.js App Router
+│   ├── page.tsx                  # Home Page
+│   └── product/
+│       └── [id]/
+│           └── page.tsx          # Product Details Page (Dynamic Route)
 │
-├── components/ # Reusable UI Components
-│ ├── Navbar.tsx
-│ ├── Hero.tsx
-│ ├── ProductCard.tsx
-│ ├── ProductCardSkeleton.tsx
-│ └── Filter.tsx
+├── components/                   # Reusable UI Components
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── ProductCard.tsx
+│   ├── ProductCardSkeleton.tsx
+│   └── Filter.tsx
 │
-├── types/ # Type Definitions
-│ └── Product.ts
+├── types/                        # Type Definitions
+│   └── Product.ts
 │
-├── public/ # Static Assets
-│ └── products.json
+├── public/                       # Static Assets
+│   └── products.json
 │
 └── README.md
+```
 
 
 
 # 🚀 GETTING STARTED
 
-# 1️⃣ Clone the Repository
+1️⃣ Clone the Repository
 
-```bash
 git clone https://github.com/akib2012/mini_ecommerce_website.git
 cd mini_ecommerce_website
 
