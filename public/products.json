@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Headphones",
+    "price": 59.99,
+    "description": "High quality wireless headphones with noise cancellation.",
+    "category": "electronics",
+    "image": "https://i.ibb.co.com/VfLrNgc/i1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Smart Watch",
+    "price": 120,
+    "description": "Modern smart watch with fitness tracking features.",
+    "category": "electronics",
+    "image": "https://i.ibb.co.com/w3bwj6x/smartwatch.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Men's Casual Shirt",
+    "price": 35,
+    "description": "Comfortable cotton casual shirt for men.",
+    "category": "fashion",
+    "image": "https://i.ibb.co.com/wNWmKDBK/i03.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Women's Handbag",
+    "price": 75,
+    "description": "Stylish handbag for everyday use.",
+    "category": "fashion",
+    "image": "https://i.ibb.co.com/XfbqxJFH/610-Wy-TPmj-RL-AC-UY900.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Running Shoes",
+    "price": 90,
+    "description": "Lightweight running shoes with strong grip.",
+    "category": "sports",
+    "image": "https://i.ibb.co.com/35yW16J1/i05.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Yoga Mat",
+    "price": 25,
+    "description": "Non-slip yoga mat for daily exercise.",
+    "category": "sports",
+    "image": "https://i.ibb.co.com/FqVwqLfS/i06.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Laptop Backpack",
+    "price": 45,
+    "description": "Durable backpack suitable for laptops and travel.",
+    "category": "accessories",
+    "image": "https://i.ibb.co.com/xtNQ5SHN/i17.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Sunglasses",
+    "price": 30,
+    "description": "UV protected stylish sunglasses.",
+    "category": "accessories",
+    "image": "https://i.ibb.co.com/8Lb56ZMt/i08.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Bluetooth Speaker",
+    "price": 65,
+    "description": "Portable Bluetooth speaker with deep bass.",
+    "category": "electronics",
+    "image": "https://i.ibb.co.com/BH3NxTqJ/i09.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Gaming Mouse",
+    "price": 40,
+    "description": "High precision gaming mouse with RGB lighting.",
+    "category": "electronics",
+    "image": "https://i.ibb.co.com/svJN90Wm/razer-cobra-pro-wireless-gaming-mouse-1-500x500.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Men's Jacket",
+    "price": 110,
+    "description": "Warm and stylish winter jacket for men.",
+    "category": "fashion",
+    "image": "https://i.ibb.co.com/cKNpzwpt/61-OGQO6x-Di-L-AC-SX679.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Women's Sneakers",
+    "price": 85,
+    "description": "Comfortable sneakers for daily wear.",
+    "category": "fashion",
+    "image": "https://i.ibb.co.com/XrFsZVVS/download.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Cricket Bat",
+    "price": 150,
+    "description": "Professional quality cricket bat.",
+    "category": "sports",
+    "image": "https://i.ibb.co.com/5hK3fkGh/4123763f2eaa99ca1232f7d0e4a91713-jpg-720x720q80.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Football",
+    "price": 35,
+    "description": "Durable football for training and matches.",
+    "category": "sports",
+    "image": "https://i.ibb.co.com/m53NYRMx/i14.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Leather Wallet",
+    "price": 28,
+    "description": "Genuine leather wallet with multiple slots.",
+    "category": "accessories",
+    "image": "https://i.ibb.co.com/x8zXm8Dy/i15.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Wrist Watch",
+    "price": 95,
+    "description": "Classic analog wrist watch.",
+    "category": "accessories",
+    "image": "https://i.ibb.co.com/GLpcWwB/i16.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Tablet",
+    "price": 220,
+    "description": "Lightweight tablet for work and entertainment.",
+    "category": "electronics",
+    "image": "https://i.ibb.co.com/xtNQ5SHN/i17.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Power Bank",
+    "price": 50,
+    "description": "10000mAh fast charging power bank.",
+    "category": "electronics",
+    "image": "https://i.ibb.co.com/chjcdD2X/420-75-lg.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Gym Gloves",
+    "price": 20,
+    "description": "Comfortable gym gloves for weight training.",
+    "category": "sports",
+    "image": "https://i.ibb.co.com/G4QRKzZT/i19.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Travel Duffel Bag",
+    "price": 70,
+    "description": "Spacious travel bag for short trips.",
+    "category": "accessories",
+    "image": "https://i.ibb.co.com/cKrJMJmQ/i20.jpg"
+  }
+]
