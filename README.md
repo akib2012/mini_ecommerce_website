@@ -9,7 +9,7 @@ This project was developed as part of the **SammTech Frontend Developer Intern T
 # 🌐 Live Demo
 
 > Add your deployed Vercel link here  
-`https://your-vercel-link.vercel.app`
+`https://mini-ecommerce-website-snowy.vercel.app/`
 
 ---
 
