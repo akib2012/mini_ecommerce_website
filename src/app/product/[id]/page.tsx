@@ -8,39 +8,57 @@ import ProductCardSkeleton from "@/components/ProductCardSkeleton";
 export default function ProductDetails() {
   const { id } = useParams();
   const router = useRouter();
+
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/products.json")
-      .then((res) => {
+    async function fetchProduct() {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const res = await fetch("/products.json");
         if (!res.ok) throw new Error("Failed to fetch products");
-        return res.json();
-      })
-      .then((data: Product[]) => {
+
+        const data: Product[] = await res.json();
         const item = data.find((p) => p.id === Number(id));
-        setProduct(item || null);
+
+        if (!item) {
+          throw new Error("Product not found");
+        }
+
+        setProduct(item);
+      } catch (err: any) {
+        setError(err.message || "Something went wrong");
+      } finally {
         setLoading(false);
-      })
-      .catch(() => {
-        setError("Something went wrong while loading product.");
-        setLoading(false);
-      });
+      }
+    }
+
+    fetchProduct();
   }, [id]);
 
-  if (loading)
-    return <ProductCardSkeleton></ProductCardSkeleton>;
+  if (loading) return <ProductCardSkeleton />;
 
   if (error)
-    return <p className="text-center mt-20 text-red-500">{error}</p>;
+    return (
+      <div className="text-center mt-20">
+        <p className="text-red-600 font-semibold text-lg">{error}</p>
+        <button
+          onClick={() => router.back()}
+          className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+        >
+          ← Go Back
+        </button>
+      </div>
+    );
 
-  if (!product)
-    return <p className="text-center mt-20 text-gray-500">Product not found!</p>;
+  if (!product) return null;
 
   return (
     <div className="w-11/12 md:w-8/12 lg:w-6/12 mx-auto p-4">
-      
       <button
         onClick={() => router.back()}
         className="mb-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
@@ -48,9 +66,7 @@ export default function ProductDetails() {
         ← Go Back
       </button>
 
-      {/* Product Card */}
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden p-6 flex flex-col md:flex-row gap-6">
-        {/* Image */}
         <div className="flex-1 flex items-center justify-center bg-gray-50 rounded-xl p-4">
           <img
             src={product.image}
@@ -59,7 +75,6 @@ export default function ProductDetails() {
           />
         </div>
 
-        {/* Details */}
         <div className="flex-1 flex flex-col justify-between">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
@@ -69,7 +84,9 @@ export default function ProductDetails() {
               ${product.price}
             </p>
             <p className="text-gray-700 mb-4">{product.description}</p>
-            <p className="text-sm text-gray-400">Category: {product.category}</p>
+            <p className="text-sm text-gray-400">
+              Category: {product.category}
+            </p>
           </div>
 
           <button
